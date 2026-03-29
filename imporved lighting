@@ -1,0 +1,21 @@
+local lighting = game:GetService("Lighting")
+
+lighting:GetPropertyChangedSignal("Brightness"):Connect(function()
+    lighting.Brightness = 5
+end)
+
+lighting:GetPropertyChangedSignal("ClockTime"):Connect(function()
+    lighting.ClockTime = 14
+end)
+
+lighting:GetPropertyChangedSignal("FogEnd"):Connect(function()
+    lighting.FogEnd = 100000
+end)
+
+lighting:GetPropertyChangedSignal("GlobalShadows"):Connect(function()
+    lighting.GlobalShadows = false
+end)
+
+lighting:GetPropertyChangedSignal("OutdoorAmbient"):Connect(function()
+    lighting.OutdoorAmbient = Color3.fromRGB(255,255,255)
+end)
