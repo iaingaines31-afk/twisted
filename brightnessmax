@@ -1,0 +1,7 @@
+local lighting = game:GetService("Lighting")
+
+lighting.Brightness = 5
+lighting.ClockTime = 14 -- daytime
+lighting.FogEnd = 100000
+lighting.GlobalShadows = false
+lighting.OutdoorAmbient = Color3.fromRGB(255,255,255)
